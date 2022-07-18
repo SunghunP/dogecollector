@@ -78,6 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dogecollector',
+        'USER': 'postgres',
+        'PASSWORD': 'parkingpark',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
