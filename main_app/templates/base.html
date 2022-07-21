@@ -1,22 +1,32 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>Doge Collector</title>
   </head>
 
   <body>
-    <header>
-
+    <header class="flex">
+      <nav class="nav flex">
+        <h4>Doge Collector</h4>
+        <ul>
+          <li class="nav-bar-item">About</li>
+        </ul>
+      </nav>
     </header>
+
     <main>
       {% block content %}
       {% endblock %}
     </main>
-    <footer>
-      
+
+    <footer class="footer">
+      This website was brought to you by: Sunghun Park
     </footer>
   </body>
 </html>
