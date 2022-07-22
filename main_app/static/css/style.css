@@ -1,6 +1,4 @@
-/* * {
-  border: solid 1px red;
-} */
+/* framework structure */
 
 html, body {
   height: 100%;
@@ -19,11 +17,10 @@ header {
 
 footer {
   box-shadow: 1px 0px 15px 0px gray;
-  border-bottom: 2px solid black;
 }
 
 header, footer {
-  background-color: blueviolet;
+  background-color: #8a2be2;
   padding: 15px;
   width: auto;
 }
@@ -36,9 +33,16 @@ nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 nav h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul {
+  height: 100%;
   padding: 0px;
   margin: 0px;
 }
@@ -47,9 +51,22 @@ nav h2 {
   color: black;
   text-decoration: none;
   list-style-type: none;
+  height: 100%;
+  padding: 10px 15px 10px 15px;
+  transition: background-color 0.5s;
+}
+
+.nav-bar-item:hover {
+  background-color: #7401df;
+  color: #ffffff;
 }
 
 /* Main */
 main {
   height: 100%;
+  
+}
+
+main h1 {
+  margin: 0 auto;
 }
