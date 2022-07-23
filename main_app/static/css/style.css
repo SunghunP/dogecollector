@@ -47,18 +47,24 @@ nav ul {
   margin: 0px;
 }
 
-.nav-bar-item {
+li.nav-bar-item {
   color: black;
   text-decoration: none;
   list-style-type: none;
   height: 100%;
   padding: 10px 15px 10px 15px;
   transition: background-color 0.5s;
+  border: none;
 }
 
 .nav-bar-item:hover {
   background-color: #7401df;
   color: #ffffff;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
 }
 
 /* Main */
@@ -69,4 +75,30 @@ main {
 
 main h1 {
   margin: 0 auto;
+}
+
+/* Card */
+
+.card {
+  width: 65%;
+  display: flex;
+  padding: 10px;
+  margin: 23px auto;
+  box-shadow: 4px 4px 15px 1px gray;
+  border-radius: 10px;
+}
+
+.card-content > span, .card-content > p {
+  margin: 0px;
+}
+
+.card-content {
+  margin: 0px 0px 0px 30px;
+  width: 100%;
+}
+
+.card-title {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 5px auto;
 }

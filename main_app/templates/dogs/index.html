@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="content">
+  {% for dog in dogs %}
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title">{{dog.name}}</div>
+        <p>Breed: {{dog.breed}}</p>
+        <p>Desc: {{dog.description}}</p>
+        <p>Age: {{dog.age}}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
