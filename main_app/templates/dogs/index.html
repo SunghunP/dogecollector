@@ -3,12 +3,14 @@
 <div class="content">
   {% for dog in dogs %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-title">{{dog.name}}</div>
-        <p>Breed: {{dog.breed}}</p>
-        <p>Desc: {{dog.description}}</p>
-        <p>Age: {{dog.age}}</p>
-      </div>
+      <a href="{% url 'detail' dog.id %}" class="dog-card">
+        <div class="card-content">
+          <div class="card-title">{{dog.name}}</div>
+          <p>Breed: {{dog.breed}}</p>
+          <p>Desc: {{dog.description}}</p>
+          <p>Age: {{dog.age}}</p>
+        </div>
+      </a>
     </div>
   {% endfor %}
 </div>

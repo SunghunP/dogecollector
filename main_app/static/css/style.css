@@ -36,9 +36,11 @@ nav {
   height: 100%;
 }
 
-nav h2 {
+nav a {
   padding: 0px;
   margin: 0px;
+  text-decoration: none;
+  color: black;
 }
 
 nav ul {
@@ -101,4 +103,9 @@ main h1 {
   font-weight: bold;
   text-decoration: underline;
   margin: 5px auto;
+}
+
+.dog-card {
+  text-decoration: none;
+  color: black;
 }
