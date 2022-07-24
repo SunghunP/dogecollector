@@ -1,6 +1,7 @@
 /* framework structure */
 :root {
   --primary-c: #8a2be2;
+  --compliment-c: #03b800;
   --hover-c: #7401df;
 }
 
@@ -93,7 +94,7 @@ main h1 {
 .card {
   width: 65%;
   display: flex;
-  padding: 10px;
+  padding: 20px;
   margin: 23px auto;
   box-shadow: 4px 4px 15px 1px gray;
   border-radius: 10px;
@@ -103,20 +104,37 @@ main h1 {
   margin: 0px;
 }
 
+.card-content > span {
+  margin-bottom: 10px;
+}
+
 .card-content {
-  margin: 0px 0px 0px 30px;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .card-title {
   font-weight: bold;
-  text-decoration: underline;
   margin: 5px auto;
+  font-size: 30px;
 }
 
 .dog-card {
   text-decoration: none;
   color: black;
+}
+
+.card-action {
+  display: flex;
+  border-top: dashed 1px black;
+  padding-top: 10px;
+}
+
+.card-action > a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--compliment-c);
+  
 }
 
 /* Form, table-form */
