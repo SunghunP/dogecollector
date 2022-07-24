@@ -95,16 +95,16 @@ main h1 {
   width: 65%;
   display: flex;
   padding: 20px;
-  margin: 23px auto;
+  margin: 25px;
   box-shadow: 4px 4px 15px 1px gray;
   border-radius: 10px;
 }
 
-.card-content > span, .card-content > p {
+.card-content span, .card-content p {
   margin: 0px;
 }
 
-.card-content > span {
+.card-content span {
   margin-bottom: 10px;
 }
 
@@ -114,9 +114,11 @@ main h1 {
 }
 
 .card-title {
+  display: block;
   font-weight: bold;
   margin: 5px auto;
   font-size: 30px;
+  box-sizing: border-box;
 }
 
 .dog-card {
@@ -134,7 +136,10 @@ main h1 {
   margin-right: 10px;
   text-decoration: none;
   color: var(--compliment-c);
-  
+}
+
+.dog-detail {
+  justify-content: space-around;
 }
 
 /* Form, table-form */
@@ -150,7 +155,33 @@ table.dog-create tr, table.dog-create tr td {
   display: flex;
 }
 
-
 table.dog-create tr td, table.dog-create tr td input, table.dog-create tr td textarea{
   flex: 1 0 10px;
+}
+
+/* Feeding Table, Feeding Form */
+.table-feeding {
+  text-align: left;
+
+}
+
+thead.table-feeding tr th{
+  margin-right: 30px;
+}
+
+.form-feeding {
+  background-color: var(--primary-c);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-feeding p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-feeding .btn {
+  width: 100%;
 }
