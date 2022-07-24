@@ -1,4 +1,8 @@
 /* framework structure */
+:root {
+  --primary-c: #8a2be2;
+  --hover-c: #7401df;
+}
 
 html, body {
   height: 100%;
@@ -7,6 +11,11 @@ html, body {
 
 .flex {
   display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header, Footer, Nav bar  */
@@ -20,7 +29,7 @@ footer {
 }
 
 header, footer {
-  background-color: #8a2be2;
+  background-color: var(--primary-c);
   padding: 15px;
   width: auto;
 }
@@ -60,7 +69,7 @@ li.nav-bar-item {
 }
 
 .nav-bar-item:hover {
-  background-color: #7401df;
+  background-color: var(--hover-c);
   color: #ffffff;
 }
 
@@ -108,4 +117,22 @@ main h1 {
 .dog-card {
   text-decoration: none;
   color: black;
+}
+
+/* Form, table-form */
+form.dog-create {
+  background-color: var(--primary-c);
+}
+
+table.dog-create {
+  color: #ffffff;
+}
+
+table.dog-create tr, table.dog-create tr td {
+  display: flex;
+}
+
+
+table.dog-create tr td, table.dog-create tr td input, table.dog-create tr td textarea{
+  flex: 1 0 10px;
 }

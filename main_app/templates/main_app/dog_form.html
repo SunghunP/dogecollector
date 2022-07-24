@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form action="" method="post" class="card flex-col dog-create">
+    {% csrf_token %}
+    <table class="dog-create table-form">
+      {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit!" class="btn">
+  </form>
+{% endblock %}
