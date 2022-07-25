@@ -3,6 +3,8 @@
 {% block content %}
 
 <div class="content">
+  <p></p>
+  <h1>All TOYS</h1>
   <div class="flex">
     {% for toy in toy_list %}
     <a href="{% url 'toys_detail' toy.id %}" class="toy-card">
