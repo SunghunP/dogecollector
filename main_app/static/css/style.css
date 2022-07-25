@@ -79,18 +79,22 @@ li.nav-bar-item {
   list-style-type: none;
   height: 100%;
   padding: 10px 15px 10px 15px;
-  transition: background-color 0.5s;
+  transition: background-color 0.1s;
   border: none;
 }
 
 .nav-bar-item:hover {
   background-color: var(--hover-c);
-  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 .nav-link {
   text-decoration: none;
   color: black;
+  transition: color 0.5s;
 }
 
 /* Main */
