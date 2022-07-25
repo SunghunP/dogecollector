@@ -16,11 +16,16 @@
       <nav class="nav flex">
         <a href="/"><h2>DOGECOLLECTOR</h2></a>
         <ul class="flex">
-          <li class="nav-bar-item"><a href="{% url 'toys_index' %}" class="nav-link">SEE ALL TOYS</a></li>
-          <li class="nav-bar-item"><a href="{% url 'toys_create' %}" class="nav-link">ADD TOY</a></li>
-          <li class="nav-bar-item"><a href="{% url 'dogs_index' %}" class="nav-link">SEE MY DOGS</a></li>
-          <li class="nav-bar-item"><a href="{% url 'dogs_create' %}" class="nav-link">ADD DOG</a></li>
           <li class="nav-bar-item"><a href="{% url 'about' %}" class="nav-link">ABOUT</a></li>
+          {% if user.is_authenticated %}
+            <li class="nav-bar-item"><a href="{% url 'toys_index' %}" class="nav-link">SEE ALL TOYS</a></li>
+            <li class="nav-bar-item"><a href="{% url 'toys_create' %}" class="nav-link">ADD TOY</a></li>
+            <li class="nav-bar-item"><a href="{% url 'dogs_index' %}" class="nav-link">SEE MY DOGS</a></li>
+            <li class="nav-bar-item"><a href="{% url 'dogs_create' %}" class="nav-link">ADD DOG</a></li>
+            <li class="nav-bar-item"><a href="{% url 'logout' %}" class="nav-link">LOGOUT</a></li>
+          {% else %}
+            <li class="nav-bar-item"><a href="{% url 'login' %}" class="nav-link">LOGIN</a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>
