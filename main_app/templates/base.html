@@ -16,6 +16,8 @@
       <nav class="nav flex">
         <a href="/"><h2>DOGECOLLECTOR</h2></a>
         <ul class="flex">
+          <li class="nav-bar-item"><a href="{% url 'toys_index' %}">SEE ALL TOYS</a></li>
+          <li class="nav-bar-item"><a href="{% url 'toys_create' %}">ADD TOY</a></li>
           <li class="nav-bar-item"><a href="{% url 'dogs_index' %}" class="nav-link">SEE MY DOGS</a></li>
           <li class="nav-bar-item"><a href="{% url 'dogs_create' %}" class="nav-link">ADD DOG</a></li>
           <li class="nav-bar-item"><a href="{% url 'about' %}" class="nav-link">ABOUT</a></li>

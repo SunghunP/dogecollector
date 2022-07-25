@@ -19,6 +19,18 @@ html, body {
   flex-direction: column;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header, Footer, Nav bar  */
 
 header {
@@ -125,7 +137,7 @@ main h1 {
   box-sizing: border-box;
 }
 
-.dog-card {
+.dog-card, .toy-card {
   text-decoration: none;
   color: black;
 }
