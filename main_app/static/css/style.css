@@ -108,6 +108,10 @@ main h1 {
   margin-bottom: 10px;
 }
 
+.card-content > p {
+  font-size: 30px;
+}
+
 .card-content {
   width: 100%;
   margin-bottom: 15px;
@@ -139,7 +143,21 @@ main h1 {
 }
 
 .dog-detail {
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.card-panel {
+  margin: 10px auto;
+  border-top: dashed 1px black;
+  border-bottom: dashed 1px black;
+}
+
+.card-panel.teal-text {
+  color: #008080;
+}
+
+.card-panel.red-text {
+  color: #ff0000;
 }
 
 /* Form, table-form */
